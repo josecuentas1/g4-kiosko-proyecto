@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GPSW_G3/src/Vista/Sistema.java</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GPSW_G3/src/Vista/Login.java</file>
-            <file>file:/C:/Users/HP/Documents/NetBeansProjects/GPSW_G3/src/Img/iconoapp.png</file>
+            <file>file:/C:/Users/HP/Documents/7mo%20ciclo%20verano/GPSW/KIOSKO---GDP/src/Modelo/Cliente.java</file>
+            <file>file:/C:/Users/HP/Documents/7mo%20ciclo%20verano/GPSW/KIOSKO---GDP/src/Modelo/ClienteDao.java</file>
+            <file>file:/C:/Users/HP/Documents/7mo%20ciclo%20verano/GPSW/KIOSKO---GDP/src/Modelo/Combo.java</file>
+            <file>file:/C:/Users/HP/Documents/7mo%20ciclo%20verano/GPSW/KIOSKO---GDP/src/Modelo/Conexion.java</file>
         </group>
     </open-files>
 </project-private>
