@@ -10,7 +10,7 @@ public class Conexion {
 
     public Connection getConnection() {
         try {
-            String myBD = "jdbc:mysql://localhost:3306/gpsw";
+            String myBD = "jdbc:mysql://localhost:3306/sis_java";
             con = DriverManager.getConnection(myBD, "root", "");
             return con;
         } catch (SQLException e) {
