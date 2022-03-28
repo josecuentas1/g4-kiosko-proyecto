@@ -1,4 +1,4 @@
-//Detalle de venta
+
 package Modelo;
 
 public class Detalle {
