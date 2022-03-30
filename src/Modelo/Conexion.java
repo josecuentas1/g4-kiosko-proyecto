@@ -12,6 +12,10 @@ public class Conexion {
         try {
             String myBD = "jdbc:mysql://3.tcp.ngrok.io:23947/sis_java";
             con = DriverManager.getConnection(myBD, "root", "123456a.");
+            
+            //String myBD = "jdbc:mysql://localhost:3306/sis_java";
+            //con = DriverManager.getConnection(myBD, "root", "");
+            
             return con;
         } catch (SQLException e) {
             System.out.println(e.toString());
