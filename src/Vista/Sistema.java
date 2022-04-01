@@ -26,6 +26,13 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
@@ -1891,7 +1898,41 @@ public final class Sistema extends javax.swing.JFrame {
             login.Registrar(lg);
             LimpiarTable();
             ListarUsuarios();
-            JOptionPane.showMessageDialog(null, "Usuario Registrado");
+            
+            //inicio enviar correo
+            try {
+                String remitente = "rolando20022016@gmail.com";
+                String clave = "dopsmzkphdsyfnnz";
+
+                Properties props = System.getProperties();
+                props.put("mail.smtp.host", "smtp.gmail.com");  //El servidor SMTP de Google
+                props.put("mail.smtp.user", remitente);
+                props.put("mail.smtp.clave", clave);    //La clave de la cuenta
+                props.put("mail.smtp.auth", "true");    //Usar autenticación mediante usuario y clave
+                props.put("mail.smtp.starttls.enable", "true"); //Para conectar de manera segura al servidor SMTP
+                props.put("mail.smtp.port", "587"); //El puerto SMTP seguro de Google
+
+                Session session = Session.getDefaultInstance(props);
+                MimeMessage message = new MimeMessage(session);
+            
+                message.setFrom(new InternetAddress(remitente));
+                message.addRecipient(Message.RecipientType.TO, new InternetAddress(correo));   //Se podrían añadir varios de la misma manera
+                message.setSubject("Registro exitoso en El Kiosko");
+                message.setContent("<h1>Gracias por tu preferencia</h1>", "text/html");
+                Transport transport = session.getTransport("smtp");
+                transport.connect("smtp.gmail.com", remitente, clave);
+                transport.sendMessage(message, message.getAllRecipients());
+                transport.close();
+                
+                JOptionPane.showMessageDialog(null, "Usuario Registrado, revise su correo");
+
+            }
+            catch (MessagingException me) {
+                JOptionPane.showMessageDialog(null, "Ocurrio un error " + me.getMessage());
+            }
+            
+            //fin enviar correo
+            
         }
     }//GEN-LAST:event_btnIniciarActionPerformed
 
