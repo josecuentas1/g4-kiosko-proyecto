@@ -74,50 +74,50 @@ public class Login extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         barra = new javax.swing.JProgressBar();
+        label1 = new java.awt.Label();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(255, 204, 0));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel3.setText("Digitar Correo Electrónico :");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
+        jLabel3.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel3.setText("Ingrese su Correo Electrónico :");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel4.setText("Digitar Contraseña :");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, -1));
+        jLabel4.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel4.setText("Ingrese su Contraseña :");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, -1));
 
-        txtCorreo.setBackground(new java.awt.Color(204, 153, 0));
+        txtCorreo.setBackground(new java.awt.Color(204, 204, 204));
         txtCorreo.setBorder(null);
         txtCorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtCorreoActionPerformed(evt);
             }
         });
-        jPanel2.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 226, 35));
+        jPanel2.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 226, 40));
 
-        txtPass.setBackground(new java.awt.Color(204, 153, 0));
+        txtPass.setBackground(new java.awt.Color(204, 204, 204));
         txtPass.setBorder(null);
-        jPanel2.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 226, 35));
+        jPanel2.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 226, 40));
 
         btnIniciar.setBackground(new java.awt.Color(204, 153, 0));
-        btnIniciar.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        btnIniciar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         btnIniciar.setText("Entrar");
-        btnIniciar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnIniciar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnIniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIniciarActionPerformed(evt);
             }
         });
-        jPanel2.add(btnIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 93, 35));
+        jPanel2.add(btnIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 93, 35));
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(204, 153, 0));
+        jPanel1.setForeground(new java.awt.Color(204, 153, 0));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -130,9 +130,10 @@ public class Login extends javax.swing.JFrame {
             .addGap(0, 5, Short.MAX_VALUE)
         );
 
-        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 255, 226, 5));
+        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 226, 5));
 
-        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel3.setBackground(new java.awt.Color(204, 153, 0));
+        jPanel3.setForeground(new java.awt.Color(204, 153, 0));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -145,50 +146,28 @@ public class Login extends javax.swing.JFrame {
             .addGap(0, 5, Short.MAX_VALUE)
         );
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 335, 226, 5));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 226, 5));
 
         jButton1.setBackground(new java.awt.Color(204, 153, 0));
-        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         jButton1.setText("Salir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 360, 93, 35));
-
-        jPanel4.setBackground(new java.awt.Color(204, 153, 0));
-        jPanel4.setBorder(new javax.swing.border.MatteBorder(null));
-
-        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/login1.png"))); // NOI18N
-        jLabel1.setText("Login \"Kiosko\"");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 110));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 93, 35));
 
         barra.setBackground(new java.awt.Color(255, 255, 255));
-        barra.setForeground(new java.awt.Color(153, 51, 0));
-        jPanel2.add(barra, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 280, 30));
+        barra.setForeground(new java.awt.Color(204, 153, 0));
+        jPanel2.add(barra, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 260, 30));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 420));
+        label1.setFont(new java.awt.Font("Verdana", 3, 30)); // NOI18N
+        label1.setForeground(new java.awt.Color(204, 153, 0));
+        label1.setText("EL KIOSKO");
+        jPanel2.add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, -1, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 390));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -260,13 +239,12 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JProgressBar barra;
     private javax.swing.JButton btnIniciar;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
+    private java.awt.Label label1;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JPasswordField txtPass;
     // End of variables declaration//GEN-END:variables
