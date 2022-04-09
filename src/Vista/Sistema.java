@@ -645,8 +645,8 @@ public final class Sistema extends javax.swing.JFrame {
         txtStockDisponible.setBorder(null);
         jPanel2.add(txtStockDisponible, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 90, 30));
 
+        TableVenta.setBackground(new java.awt.Color(241, 213, 129));
         TableVenta.setFont(new java.awt.Font("Verdana", 0, 11)); // NOI18N
-        TableVenta.setForeground(new java.awt.Color(204, 153, 0));
         TableVenta.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -857,11 +857,10 @@ public final class Sistema extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("0", jPanel2);
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        TableCliente.setBackground(new java.awt.Color(204, 204, 0));
-        TableCliente.setForeground(new java.awt.Color(51, 102, 0));
+        TableCliente.setBackground(new java.awt.Color(241, 213, 129));
         TableCliente.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -884,15 +883,14 @@ public final class Sistema extends javax.swing.JFrame {
             TableCliente.getColumnModel().getColumn(4).setPreferredWidth(80);
         }
 
-        jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 555, 370));
+        jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, 555, 370));
 
-        jPanel9.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel9.setBackground(new java.awt.Color(255, 255, 255));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel12.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel12.setText("Dni/Ruc:");
-        jPanel9.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
+        jPanel9.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
 
         txtDniCliente.setBackground(new java.awt.Color(204, 204, 204));
         txtDniCliente.setBorder(null);
@@ -903,10 +901,9 @@ public final class Sistema extends javax.swing.JFrame {
         });
         jPanel9.add(txtDniCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 160, 30));
 
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel13.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel13.setText("Nombre:");
-        jPanel9.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+        jPanel9.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
 
         txtNombreCliente.setBackground(new java.awt.Color(204, 204, 204));
         txtNombreCliente.setBorder(null);
@@ -916,15 +913,13 @@ public final class Sistema extends javax.swing.JFrame {
         txtTelefonoCliente.setBorder(null);
         jPanel9.add(txtTelefonoCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 160, 30));
 
-        jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel14.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel14.setText("Télefono:");
-        jPanel9.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
+        jPanel9.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
 
-        jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel15.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel15.setText("Dirección:");
-        jPanel9.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+        jPanel9.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
 
         txtDirecionCliente.setBackground(new java.awt.Color(204, 204, 204));
         txtDirecionCliente.setBorder(null);
@@ -1027,10 +1022,9 @@ public final class Sistema extends javax.swing.JFrame {
 
         jPanel9.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 233, 160, 2));
 
-        jPanel46.setBackground(new java.awt.Color(204, 204, 0));
+        jPanel46.setBackground(new java.awt.Color(241, 213, 129));
 
-        jLabel41.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel41.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel41.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel41.setText("Nuevo Cliente");
 
@@ -1050,15 +1044,14 @@ public final class Sistema extends javax.swing.JFrame {
 
         jPanel9.add(jPanel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 40));
 
-        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 270, 370));
+        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 270, 370));
 
         jTabbedPane1.addTab("2", jPanel3);
 
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setBackground(new java.awt.Color(204, 204, 204));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        TableProveedor.setBackground(new java.awt.Color(204, 204, 0));
-        TableProveedor.setForeground(new java.awt.Color(51, 102, 0));
+        TableProveedor.setBackground(new java.awt.Color(241, 213, 129));
         TableProveedor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -1081,13 +1074,12 @@ public final class Sistema extends javax.swing.JFrame {
             TableProveedor.getColumnModel().getColumn(4).setPreferredWidth(80);
         }
 
-        jPanel4.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 57, 558, 370));
+        jPanel4.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(318, 50, 560, 380));
 
-        jPanel10.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel17.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel17.setText("Ruc:");
         jPanel10.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
 
@@ -1095,8 +1087,7 @@ public final class Sistema extends javax.swing.JFrame {
         txtRucProveedor.setBorder(null);
         jPanel10.add(txtRucProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, 138, 30));
 
-        jLabel18.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel18.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel18.setText("Nombre:");
         jPanel10.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
 
@@ -1104,8 +1095,7 @@ public final class Sistema extends javax.swing.JFrame {
         txtNombreproveedor.setBorder(null);
         jPanel10.add(txtNombreproveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 138, 30));
 
-        jLabel19.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel19.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel19.setText("Teléfono:");
         jPanel10.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
 
@@ -1113,8 +1103,7 @@ public final class Sistema extends javax.swing.JFrame {
         txtTelefonoProveedor.setBorder(null);
         jPanel10.add(txtTelefonoProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 138, 30));
 
-        jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel20.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel20.setText("Dirección:");
         jPanel10.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
 
@@ -1128,7 +1117,7 @@ public final class Sistema extends javax.swing.JFrame {
                 btnguardarProveedorActionPerformed(evt);
             }
         });
-        jPanel10.add(btnguardarProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 266, 70, 35));
+        jPanel10.add(btnguardarProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 70, 35));
 
         btnEditarProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Actualizar (2).png"))); // NOI18N
         btnEditarProveedor.addActionListener(new java.awt.event.ActionListener() {
@@ -1136,7 +1125,7 @@ public final class Sistema extends javax.swing.JFrame {
                 btnEditarProveedorActionPerformed(evt);
             }
         });
-        jPanel10.add(btnEditarProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(161, 266, 70, 35));
+        jPanel10.add(btnEditarProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 70, 35));
 
         btnNuevoProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/nuevo.png"))); // NOI18N
         btnNuevoProveedor.addActionListener(new java.awt.event.ActionListener() {
@@ -1144,7 +1133,7 @@ public final class Sistema extends javax.swing.JFrame {
                 btnNuevoProveedorActionPerformed(evt);
             }
         });
-        jPanel10.add(btnNuevoProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(161, 318, 70, 35));
+        jPanel10.add(btnNuevoProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, 70, 35));
 
         btnEliminarProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/eliminar.png"))); // NOI18N
         btnEliminarProveedor.addActionListener(new java.awt.event.ActionListener() {
@@ -1152,7 +1141,7 @@ public final class Sistema extends javax.swing.JFrame {
                 btnEliminarProveedorActionPerformed(evt);
             }
         });
-        jPanel10.add(btnEliminarProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 318, 70, 35));
+        jPanel10.add(btnEliminarProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 70, 35));
         jPanel10.add(txtIdProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 24, -1));
 
         jPanel34.setBackground(new java.awt.Color(0, 0, 0));
@@ -1215,10 +1204,9 @@ public final class Sistema extends javax.swing.JFrame {
 
         jPanel10.add(jPanel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 138, 2));
 
-        jPanel38.setBackground(new java.awt.Color(204, 204, 0));
+        jPanel38.setBackground(new java.awt.Color(241, 213, 129));
 
-        jLabel33.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel33.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel33.setText("Nuevo Proveedor");
 
@@ -1233,19 +1221,19 @@ public final class Sistema extends javax.swing.JFrame {
             .addGroup(jPanel38Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel33)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         jPanel10.add(jPanel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 50));
 
-        jPanel4.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 260, 380));
+        jPanel4.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 260, 380));
 
         jTabbedPane1.addTab("3", jPanel4);
 
+        jPanel5.setBackground(new java.awt.Color(204, 204, 204));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        TableProducto.setBackground(new java.awt.Color(204, 204, 0));
-        TableProducto.setForeground(new java.awt.Color(51, 102, 0));
+        TableProducto.setBackground(new java.awt.Color(241, 213, 129));
         TableProducto.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -1270,14 +1258,13 @@ public final class Sistema extends javax.swing.JFrame {
             TableProducto.getColumnModel().getColumn(5).setPreferredWidth(50);
         }
 
-        jPanel5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 50, 570, 380));
+        jPanel5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 570, 380));
         jPanel5.add(txtIdproducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 25, 20, -1));
 
-        jPanel11.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
         jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel22.setFont(new java.awt.Font("Verdana", 3, 12)); // NOI18N
         jLabel22.setText("Código:");
         jPanel11.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
 
@@ -1285,8 +1272,7 @@ public final class Sistema extends javax.swing.JFrame {
         txtCodigoPro.setBorder(null);
         jPanel11.add(txtCodigoPro, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, 130, 30));
 
-        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel23.setFont(new java.awt.Font("Verdana", 3, 12)); // NOI18N
         jLabel23.setText("Descripción:");
         jPanel11.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, -1));
 
@@ -1294,8 +1280,7 @@ public final class Sistema extends javax.swing.JFrame {
         txtDesPro.setBorder(null);
         jPanel11.add(txtDesPro, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 130, 30));
 
-        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel24.setFont(new java.awt.Font("Verdana", 3, 12)); // NOI18N
         jLabel24.setText("Cantidad:");
         jPanel11.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
 
@@ -1303,8 +1288,7 @@ public final class Sistema extends javax.swing.JFrame {
         txtCantPro.setBorder(null);
         jPanel11.add(txtCantPro, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 130, 30));
 
-        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel25.setFont(new java.awt.Font("Verdana", 3, 12)); // NOI18N
         jLabel25.setText("Precio:");
         jPanel11.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
 
@@ -1317,8 +1301,7 @@ public final class Sistema extends javax.swing.JFrame {
         });
         jPanel11.add(txtPrecioPro, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 130, 30));
 
-        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel26.setFont(new java.awt.Font("Verdana", 3, 12)); // NOI18N
         jLabel26.setText("Proveedor:");
         jPanel11.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 285, -1, 20));
 
@@ -1428,11 +1411,10 @@ public final class Sistema extends javax.swing.JFrame {
 
         jPanel11.add(jPanel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 130, 2));
 
-        jPanel39.setBackground(new java.awt.Color(204, 204, 0));
+        jPanel39.setBackground(new java.awt.Color(241, 213, 129));
         jPanel39.setForeground(new java.awt.Color(51, 102, 0));
 
-        jLabel40.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel40.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel40.setText("Nuevo Producto");
 
@@ -1441,29 +1423,29 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel39Layout.setHorizontalGroup(
             jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel39Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
                 .addComponent(jLabel40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(879, 879, 879))
+                .addGap(829, 829, 829))
         );
         jPanel39Layout.setVerticalGroup(
             jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel39Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel40, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         jPanel11.add(jPanel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 50));
 
-        jPanel5.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 250, 380));
+        jPanel5.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 250, 380));
 
         jTabbedPane1.addTab("4", jPanel5);
 
         jPanel6.setBackground(new java.awt.Color(204, 204, 204));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        TableVentas.setBackground(new java.awt.Color(204, 204, 0));
+        TableVentas.setBackground(new java.awt.Color(241, 213, 129));
         TableVentas.setBorder(new javax.swing.border.MatteBorder(null));
-        TableVentas.setForeground(new java.awt.Color(51, 102, 0));
         TableVentas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -1485,7 +1467,7 @@ public final class Sistema extends javax.swing.JFrame {
             TableVentas.getColumnModel().getColumn(3).setPreferredWidth(60);
         }
 
-        jPanel6.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 766, 310));
+        jPanel6.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 766, 310));
 
         btnPdfVentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/pdf.png"))); // NOI18N
         btnPdfVentas.addActionListener(new java.awt.event.ActionListener() {
@@ -1496,7 +1478,7 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel6.add(btnPdfVentas, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
         jPanel6.add(txtIdVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 46, -1));
 
-        jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("Historial Ventas");
         jPanel6.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, 280, -1));
@@ -1672,15 +1654,13 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel13.setBackground(new java.awt.Color(204, 204, 204));
         jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel34.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel34.setText("Correo Electrónico :");
-        jPanel13.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, -1));
+        jLabel34.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
+        jLabel34.setText("Correo Electrónico:");
+        jPanel13.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
 
-        jLabel35.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel35.setText("Contraseña :");
-        jPanel13.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, -1, -1));
+        jLabel35.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
+        jLabel35.setText("Contraseña:");
+        jPanel13.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, -1));
 
         txtCorreo.setBackground(new java.awt.Color(204, 204, 204));
         txtCorreo.setBorder(null);
@@ -1689,36 +1669,33 @@ public final class Sistema extends javax.swing.JFrame {
                 txtCorreoActionPerformed(evt);
             }
         });
-        jPanel13.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 226, 30));
+        jPanel13.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 226, 30));
 
         txtPass.setBackground(new java.awt.Color(204, 204, 204));
         txtPass.setBorder(null);
-        jPanel13.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 192, 226, 20));
+        jPanel13.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 226, 30));
 
-        btnIniciar.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
-        btnIniciar.setForeground(new java.awt.Color(51, 102, 0));
-        btnIniciar.setText("¡¡ Registrar !!");
+        btnIniciar.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        btnIniciar.setText("Registrar usuario");
         btnIniciar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnIniciar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIniciarActionPerformed(evt);
             }
         });
-        jPanel13.add(btnIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 341, 226, 34));
+        jPanel13.add(btnIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 226, 40));
 
-        jLabel36.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel36.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel36.setText("Nombre Completo:");
-        jPanel13.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, -1, -1));
+        jPanel13.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, -1, -1));
 
         txtNombre.setBackground(new java.awt.Color(204, 204, 204));
         txtNombre.setBorder(null);
-        jPanel13.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 243, 226, 30));
+        jPanel13.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 226, 30));
 
-        jLabel37.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel37.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel37.setText("Rol:");
-        jPanel13.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, -1, -1));
+        jPanel13.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, -1, -1));
 
         cbxRol.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Administrador", "Asistente" }));
         cbxRol.addActionListener(new java.awt.event.ActionListener() {
@@ -1726,7 +1703,7 @@ public final class Sistema extends javax.swing.JFrame {
                 cbxRolActionPerformed(evt);
             }
         });
-        jPanel13.add(cbxRol, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 304, 226, 30));
+        jPanel13.add(cbxRol, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 226, 30));
 
         jPanel15.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -1741,7 +1718,7 @@ public final class Sistema extends javax.swing.JFrame {
             .addGap(0, 2, Short.MAX_VALUE)
         );
 
-        jPanel13.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 156, 226, 2));
+        jPanel13.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 226, 2));
 
         jPanel16.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -1756,7 +1733,7 @@ public final class Sistema extends javax.swing.JFrame {
             .addGap(0, 2, Short.MAX_VALUE)
         );
 
-        jPanel13.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 212, 226, 2));
+        jPanel13.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 226, 2));
 
         jPanel17.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -1771,12 +1748,11 @@ public final class Sistema extends javax.swing.JFrame {
             .addGap(0, 2, Short.MAX_VALUE)
         );
 
-        jPanel13.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 273, 226, 2));
+        jPanel13.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 226, 2));
 
-        jPanel18.setBackground(new java.awt.Color(204, 204, 0));
+        jPanel18.setBackground(new java.awt.Color(241, 213, 129));
 
-        jLabel39.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel39.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel39.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel39.setText("Nuevo Usuario");
 
@@ -1791,17 +1767,16 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel18Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addContainerGap()
                 .addComponent(jLabel39)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jPanel13.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 60));
+        jPanel13.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 50));
 
-        jPanel12.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 280, 380));
+        jPanel12.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 49, 280, 380));
 
-        TableUsuarios.setBackground(new java.awt.Color(204, 204, 0));
-        TableUsuarios.setForeground(new java.awt.Color(51, 102, 0));
+        TableUsuarios.setBackground(new java.awt.Color(241, 213, 129));
         TableUsuarios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -1812,7 +1787,7 @@ public final class Sistema extends javax.swing.JFrame {
         ));
         jScrollPane6.setViewportView(TableUsuarios);
 
-        jPanel12.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, 540, 380));
+        jPanel12.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, 560, 380));
 
         jTabbedPane1.addTab("7", jPanel12);
 
