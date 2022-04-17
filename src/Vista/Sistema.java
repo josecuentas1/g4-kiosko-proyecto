@@ -33,6 +33,7 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
@@ -74,12 +75,13 @@ public final class Sistema extends javax.swing.JFrame {
         txtIdProveedor.setVisible(false);
         txtIdConfig.setVisible(false);
         txtIdCV.setVisible(false);
-        btnConfig.setVisible(false);
+        btnConfig.setVisible(true);
         ListarConfig();
         if (priv.getRol().equals("Asistente")) {
             btnProductos.setEnabled(false);
             btnProveedor.setEnabled(false);
             LabelVendedor.setText(priv.getNombre());
+            btnUsuarios.setEnabled(false);
         } else {
             LabelVendedor.setText(priv.getNombre());
         }
@@ -87,6 +89,7 @@ public final class Sistema extends javax.swing.JFrame {
         header.setOpaque(false);
         header.setBackground(new Color(0, 110, 255));
         header.setForeground(Color.white);
+        setIconImage (new ImageIcon(getClass().getResource("/Img/icon.png")).getImage());
     }
 
     public void ListarCliente() {
@@ -609,7 +612,8 @@ public final class Sistema extends javax.swing.JFrame {
         });
         jPanel2.add(txtCodigoVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 100, 30));
 
-        txtDescripcionVenta.setBackground(new java.awt.Color(204, 204, 204));
+        txtDescripcionVenta.setEditable(false);
+        txtDescripcionVenta.setBackground(new java.awt.Color(229, 229, 229));
         txtDescripcionVenta.setBorder(null);
         txtDescripcionVenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -638,6 +642,11 @@ public final class Sistema extends javax.swing.JFrame {
         txtPrecioVenta.setEditable(false);
         txtPrecioVenta.setBackground(new java.awt.Color(229, 229, 229));
         txtPrecioVenta.setBorder(null);
+        txtPrecioVenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPrecioVentaActionPerformed(evt);
+            }
+        });
         jPanel2.add(txtPrecioVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, 80, 30));
 
         txtStockDisponible.setEditable(false);
@@ -1488,24 +1497,21 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel32.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel32.setText("DATOS DE LA EMPRESA \" El Kiosko \"");
+        jLabel32.setFont(new java.awt.Font("Verdana", 3, 18)); // NOI18N
+        jLabel32.setText("DATOS DE LA EMPRESA \"EL KIOSKO\"");
         jPanel7.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, -1, -1));
 
-        jPanel8.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel8.setBackground(new java.awt.Color(229, 229, 229));
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel8.add(txtIdConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 290, 24, -1));
 
-        jLabel30.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel30.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel30.setText("Dirección");
-        jPanel8.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, -1));
+        jPanel8.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, -1));
 
-        jLabel29.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel29.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel29.setText("Teléfono");
-        jPanel8.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 120, -1, -1));
+        jPanel8.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, -1, -1));
 
         txtTelefonoConfig.setBackground(new java.awt.Color(204, 204, 204));
         txtTelefonoConfig.setBorder(null);
@@ -1515,16 +1521,15 @@ public final class Sistema extends javax.swing.JFrame {
         txtDireccionConfig.setBorder(null);
         jPanel8.add(txtDireccionConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 147, 30));
 
-        jLabel31.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(51, 102, 0));
-        jLabel31.setText("Descripcion");
-        jPanel8.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, -1));
+        jLabel31.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
+        jLabel31.setText("Descripción");
+        jPanel8.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, -1, -1));
 
         txtMensaje.setBackground(new java.awt.Color(204, 204, 204));
         txtMensaje.setBorder(null);
         jPanel8.add(txtMensaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 400, 30));
 
-        btnActualizarConfig.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
+        btnActualizarConfig.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         btnActualizarConfig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Actualizar (2).png"))); // NOI18N
         btnActualizarConfig.setText("ACTUALIZAR");
         btnActualizarConfig.setBorder(null);
@@ -1534,10 +1539,9 @@ public final class Sistema extends javax.swing.JFrame {
                 btnActualizarConfigActionPerformed(evt);
             }
         });
-        jPanel8.add(btnActualizarConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 180, 35));
+        jPanel8.add(btnActualizarConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 180, 35));
 
-        jLabel27.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel27.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel27.setText("Ruc");
         jPanel8.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, -1, -1));
 
@@ -1545,10 +1549,9 @@ public final class Sistema extends javax.swing.JFrame {
         txtRucConfig.setBorder(null);
         jPanel8.add(txtRucConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 147, 30));
 
-        jLabel28.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(51, 102, 0));
+        jLabel28.setFont(new java.awt.Font("Verdana", 3, 14)); // NOI18N
         jLabel28.setText("Nombre");
-        jPanel8.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, -1));
+        jPanel8.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, -1, -1));
 
         txtNombreConfig.setBackground(new java.awt.Color(204, 204, 204));
         txtNombreConfig.setBorder(null);
@@ -1629,10 +1632,10 @@ public final class Sistema extends javax.swing.JFrame {
 
         jPanel8.add(jPanel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 220, 2));
 
-        jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 420, 340));
+        jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 420, 340));
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Captura2.PNG"))); // NOI18N
-        jPanel7.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, 420, 340));
+        jPanel7.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 70, 420, 340));
 
         javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
         jPanel40.setLayout(jPanel40Layout);
@@ -1830,8 +1833,9 @@ public final class Sistema extends javax.swing.JFrame {
             
                 message.setFrom(new InternetAddress(remitente));
                 message.addRecipient(Message.RecipientType.TO, new InternetAddress(correo));   //Se podrían añadir varios de la misma manera
-                message.setSubject("Registro exitoso en El Kiosko");
-                message.setContent("<h1>Gracias por tu preferencia</h1>", "text/html");
+                message.setSubject("[EL KIOSKO] Registro exitoso");
+                message.setContent("<h3>Bienvenido(a) al sistema EL KIOSKO:</h3>"
+                        +"<h4>Nos es grato informarle que se le ha registrado correctamente.</h4>", "text/html");
                 Transport transport = session.getTransport("smtp");
                 transport.connect("smtp.gmail.com", remitente, clave);
                 transport.sendMessage(message, message.getAllRecipients());
@@ -1841,7 +1845,7 @@ public final class Sistema extends javax.swing.JFrame {
 
             }
             catch (MessagingException me) {
-                JOptionPane.showMessageDialog(null, "Ocurrio un error " + me.getMessage());
+                JOptionPane.showMessageDialog(null, "Ocurrio un error: " + me.getMessage());
             }
             
             //fin enviar correo
@@ -2017,7 +2021,7 @@ public final class Sistema extends javax.swing.JFrame {
     private void btnEditarProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarProveedorActionPerformed
         // TODO add your handling code here:
         if ("".equals(txtIdProveedor.getText())) {
-            JOptionPane.showMessageDialog(null, "Seleecione una fila");
+            JOptionPane.showMessageDialog(null, "Selecione una fila");
         } else {
             if (!"".equals(txtRucProveedor.getText()) || !"".equals(txtNombreproveedor.getText()) || !"".equals(txtTelefonoProveedor.getText()) || !"".equals(txtDireccionProveedor.getText())) {
                 pr.setRuc(txtRucProveedor.getText());
@@ -2363,6 +2367,10 @@ public final class Sistema extends javax.swing.JFrame {
         // TODO add your handling code here:
         jTabbedPane1.setSelectedIndex(0);
     }//GEN-LAST:event_btnNuevaVentaActionPerformed
+
+    private void txtPrecioVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioVentaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPrecioVentaActionPerformed
 
     /**
      * @param args the command line arguments

@@ -5,6 +5,7 @@ import Modelo.LoginDAO;
 import Modelo.login;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
@@ -21,6 +22,7 @@ public class Login extends javax.swing.JFrame {
         txtCorreo.setText("admin@gmail.com");
         txtPass.setText("admin");
         barra.setVisible(false);
+        setIconImage (new ImageIcon(getClass().getResource("/Img/icon.png")).getImage());
     }
     public class BarraProgreso implements ActionListener {
 
