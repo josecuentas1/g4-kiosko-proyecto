@@ -1,14 +1,15 @@
 # PROYECTO-KIOSKO
-- Curso: Gestión de proyectos
+- Curso: Verificacion y validacion del software
 - Docente: Wilder Alex Inga López
-- Grupo: 3
+- Grupo: 4
 
 ## Integrantes
 
 | Apellidos | Nombres |
 | ------ | ------ |
-| Suel Arroyo | Walter |
-| Tumi Mamani | Nicole Gabriela |
-| Ramirez Gomero | Bryan Anthony |
-| Carhuamaca Puente | Albert Antonio |
-| Sierra Godoy | Paul Brayan |
+| Ambrocio Milla | Katherine |
+| Caceres Estaña | Juan |
+| Cuentas Ramirez | Jose |
+| Poma Ruiz | Angel |
+| Ramirez Gomero | Bryan |
+
